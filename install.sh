@@ -9,7 +9,7 @@ if [ ! -z ${_BUILD_ARG_AZUREBICEP} ]; then
     echo "Activating feature 'Azure Bicep'"
 
     # Azure Bicep CLI version 
-    CLIVERSION=${_BUILD_ARG_AZUREBICEP_CLI:-"latest"}
+    CLIVERSION=${_BUILD_ARG_AZUREBICEP_VERSION:-"latest"}
 
     if [ "${CLIVERSION}" = "latest" ]; then        
         CLIURL="https://github.com/Azure/bicep/releases/latest/download/bicep-linux-x64"

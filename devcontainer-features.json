@@ -4,7 +4,7 @@
             "id": "azurebicep",
             "name": "Azure Bicep",
             "options": {
-                "cli": {
+                "version": {
                     "type": "string",
                     "default": "latest",
                     "description": "Specify a version of the Azure Bicep CLI"
