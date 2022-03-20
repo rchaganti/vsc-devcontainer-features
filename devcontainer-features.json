@@ -8,11 +8,6 @@
                     "type": "string",
                     "default": "latest",
                     "description": "Specify a version of the Azure Bicep CLI"
-                },
-                "extension": {
-                    "type": "string",
-                    "default": "latest",
-                    "description": "Specify a version of the Azure Bicep VS Code Extension"
                 }
             },
             "entrypoint": "/usr/installbicep.sh"
