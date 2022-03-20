@@ -11,7 +11,10 @@
                     "description": "Specify a version of the Azure Bicep CLI"
                 }
             },
-            "entrypoint": "/usr/installbicep.sh"
+            "entrypoint": "/usr/installbicep.sh",
+            "extensions": [
+                "ms-azuretools.vscode-bicep"
+            ]
         }
     ]
 }
