@@ -14,7 +14,7 @@ if [ ! -z ${_BUILD_ARG_AZUREBICEP} ]; then
 
     sudo tee /usr/installbicep.sh > /dev/null \
     << EOF
-    sudo curl -Lo /usr/local/bin/bicep https://github.com/Azure/bicep/releases/v${VERSION}/download/bicep-linux-x64
+    sudo curl -Lo /usr/local/bin/bicep https://github.com/Azure/bicep/releases/download/${VERSION}/bicep-linux-x64
     sudo chmod +x /usr/local/bin/bicep
 EOF
     sudo chmod +x /usr/installbicep.sh
