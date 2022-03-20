@@ -4,17 +4,18 @@
             "id": "azurebicep",
             "name": "Azure Bicep",
             "options": {
-                "version": {
+                "cli": {
                     "type": "string",
-                    "proposals": [ "latest" ],
                     "default": "latest",
                     "description": "Specify a version of the Azure Bicep CLI"
+                },
+                "extension": {
+                    "type": "string",
+                    "default": "latest",
+                    "description": "Specify a version of the Azure Bicep VS Code Extension"
                 }
             },
-            "entrypoint": "/usr/installbicep.sh",
-            "extensions": [
-                "ms-azuretools.vscode-bicep"
-            ]
+            "entrypoint": "/usr/installbicep.sh"
         }
     ]
 }
