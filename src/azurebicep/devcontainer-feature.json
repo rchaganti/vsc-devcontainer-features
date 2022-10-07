@@ -1,6 +1,6 @@
 {          
     "id": "azurebicep",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Azure Bicep",
     "options": {
         "version": {
@@ -9,7 +9,6 @@
             "description": "Specify a version of the Azure Bicep CLI"
         }
     },
-    "entrypoint": "/usr/installbicep.sh",
     "customizations": {
         "vscode": {
             "extensions": [
