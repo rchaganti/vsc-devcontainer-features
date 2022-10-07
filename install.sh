@@ -31,7 +31,7 @@ if [ ! -z ${_BUILD_ARG_CUELANG} ]; then
     # CUE lang version
     CUEVERSION=${_BUILD_ARG_CUELANG_VERSION:-"latest"}
 
-    CUERUL="https://github.com/cue-lang/cue/releases/download/v${CUEVERSION}/cue_v${CUEVERSION}_linux_amd64.tar.gz"
+    CUEURL="https://github.com/cue-lang/cue/releases/download/v${CUEVERSION}/cue_v${CUEVERSION}_linux_amd64.tar.gz"
 
     sudo tee /usr/installcue.sh > /dev/null \
     << EOF
