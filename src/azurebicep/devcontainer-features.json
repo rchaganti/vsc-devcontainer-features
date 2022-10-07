@@ -11,17 +11,6 @@
                 }
             },
             "entrypoint": "/usr/installbicep.sh"
-        },
-        {
-            "id": "cuelang",
-            "name": "CUE Lang",
-            "options": {
-                "version": {
-                    "type": "string",
-                    "description": "Specify a version of CUE language"
-                }
-            },
-            "entrypoint": "/usr/installcue.sh"
         }
     ]
 }
