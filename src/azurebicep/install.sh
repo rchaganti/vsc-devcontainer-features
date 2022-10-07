@@ -16,9 +16,5 @@ else
     CLIURL="https://github.com/Azure/bicep/releases/download/${VERSION}/bicep-linux-x64"
 fi
 
-sudo tee /usr/installbicep.sh > /dev/null \
-<< EOF
 sudo curl -Lo /usr/local/bin/bicep ${CLIURL}
 sudo chmod +x /usr/local/bin/bicep
-EOF
-sudo chmod +x /usr/installbicep.sh
