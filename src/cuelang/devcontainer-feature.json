@@ -1,6 +1,6 @@
 {
     "id": "cuelang",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "CUE Lang",
     "options": {
         "version": {
