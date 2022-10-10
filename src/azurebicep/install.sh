@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e
 
-set -a
-. ./devcontainer-features.env
-set +a
-
 echo "Activating feature 'Azure Bicep'"
 
 # Azure Bicep CLI version 

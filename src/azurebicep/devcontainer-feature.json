@@ -1,6 +1,6 @@
 {          
     "id": "azurebicep",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "Azure Bicep",
     "options": {
         "version": {
