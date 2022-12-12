@@ -1,0 +1,11 @@
+{
+    "id": "gitsign",
+    "version": "1.0.0",
+    "name": "cosign",
+    "options": {
+        "version": {
+            "type": "string",
+            "description": "Specify a version of gitsign binary"
+        }
+    }
+}
