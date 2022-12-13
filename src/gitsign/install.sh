@@ -15,3 +15,9 @@ GITSIGNURL="https://github.com/sigstore/gitsign/releases/latest/download/gitsign
 
 sudo curl -Lo /usr/local/bin/gitsign ${GITSIGNURL}
 sudo chmod +x /usr/local/bin/gitsign
+
+# Configure git
+git config --local commit.gpgsign true
+git config --local tag.gpgsign true
+git config --local gpg.x509.program gitsign
+git config --local gpg.format x509
