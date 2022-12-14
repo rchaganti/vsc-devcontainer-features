@@ -1,7 +1,7 @@
 {
     "id": "gitsign",
     "version": "1.0.2",
-    "name": "cosign",
+    "name": "gitsign",
     "options": {
         "version": {
             "type": "string",
