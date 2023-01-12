@@ -3,7 +3,7 @@ set -e
 
 echo "Activating feature 'Tiny Go'"
 
-# Azure Bicep CLI version 
+# Tiny Go version 
 VERSION=${VERSION:-"latest"}
 ARCHITECTURE="amd64"
 

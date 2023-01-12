@@ -3,14 +3,31 @@ set -e
 
 echo "Activating feature 'The WebAssembly Binary Toolkit'"
 
-# Azure Bicep CLI version 
-VERSION=${VERSION:-"latest"}
+# Get cmake
+cd ~
+sudo curl -Lo ~/cmake.sh https://github.com/Kitware/CMake/releases/download/v3.25.1/cmake-3.25.1-linux-x86_64.sh
+sudo chmod +x ~/cmake.sh
 
-LOCALFILE="/tmp/wabt.tar.gz"
-WABTURL="https://github.com/WebAssembly/wabt/releases/download/${VERSION}/wabt-${VERSION}-ubuntu.tar.gz"
+sudo mkdir /usr/local/bin/cmake
+./cmake.sh --skip-license --prefix=/usr/local/bin/cmake
+export PATH="${PATH}:/usr/local/bin/cmake/bin"
+rm ~/cmake.sh
 
-sudo curl -Lo ${LOCALFILE} ${WABTURL}
-sudo tar -xvf ${LOCALFILE} --directory /usr/local/bin/
-export PATH="${PATH}:/usr/local/bin/wabt-${VERSION}"
+# Clone and build wabt
+sudo git clone https://github.com/WebAssembly/wabt.git
+sudo cd wabt
+sudo git submodule update --init
 
-sudo rm  ${LOCALFILE}
+sudo mkdir build
+sudo cd build
+sudo cmake ..
+sudo cmake --build .
+
+sudo cd ..
+sudo mkdir /usr/local/bin/wabt
+sudo mv build/ /usr/local/bin/wabt/bin
+
+sudo cd ..
+sudo rm -rf wabt/
+
+export PATH="${PATH}:/usr/local/bin/wabt/bin"
