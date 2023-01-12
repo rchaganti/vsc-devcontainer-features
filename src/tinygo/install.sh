@@ -14,6 +14,6 @@ fi
 TINYURL="https://github.com/tinygo-org/tinygo/releases/download/v${VERSION}/tinygo_${VERSION}_${ARCHITECTURE}.deb"
 
 sudo curl -Lo /usr/local/bin/bicep ${TINYURL}
-sudo dpkg -i tinygo_${VERSION}_{ARCHITECTURE}.deb
+sudo dpkg -i tinygo_${VERSION}_${ARCHITECTURE}.deb
 
 export PATH=$PATH:/usr/local/bin
