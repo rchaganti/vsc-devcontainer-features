@@ -1,10 +1,11 @@
 {
     "id": "cosign",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "cosign",
     "options": {
         "version": {
             "type": "string",
+            "default": "latest",
             "description": "Specify a version of cosign binary"
         }
     }

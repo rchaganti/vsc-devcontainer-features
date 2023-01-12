@@ -1,10 +1,11 @@
 {
     "id": "cuelang",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "CUE Lang",
     "options": {
         "version": {
             "type": "string",
+            "default": "latest",
             "description": "Specify a version of CUE language"
         }
     },  
