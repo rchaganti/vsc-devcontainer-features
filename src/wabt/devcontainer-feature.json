@@ -1,6 +1,6 @@
 {          
     "id": "wabt",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "The WebAssembly Binary Toolkit",
     "options": {
         "version": {
