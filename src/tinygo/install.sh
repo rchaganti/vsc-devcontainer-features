@@ -11,9 +11,11 @@ if [ "$(dpkg --print-architecture)" ==  "arm64" ]; then
     ARCHITECTURE="arm64"
 fi
 
+LOCALFILE="/tmp/tinygo_${VERSION}_${ARCHITECTURE}.deb"
 TINYURL="https://github.com/tinygo-org/tinygo/releases/download/v${VERSION}/tinygo_${VERSION}_${ARCHITECTURE}.deb"
 
-sudo curl -Lo /usr/local/bin/bicep ${TINYURL}
-sudo dpkg -i tinygo_${VERSION}_${ARCHITECTURE}.deb
+sudo curl -Lo ${LOCALFILE} ${TINYURL}
+sudo dpkg -i  ${LOCALFILE}
+sudo rm  ${LOCALFILE}
 
 export PATH=$PATH:/usr/local/bin

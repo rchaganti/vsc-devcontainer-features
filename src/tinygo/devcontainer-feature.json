@@ -1,6 +1,6 @@
 {          
     "id": "tinygo",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Tiny Go",
     "options": {
         "version": {
@@ -16,7 +16,7 @@
                 "golang.go"
             ],
             "features": {
-                "ghcr.io/owner/repo/go": "1.18"
+                "ghcr.io/devcontainers/features/go:1": {}
             }
         }
     }
