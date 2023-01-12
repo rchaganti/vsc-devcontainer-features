@@ -24,8 +24,8 @@ cmake ..
 cmake --build .
 
 cd ..
-sudo mkdir /usr/local/bin/wabt
-sudo mv build/ /usr/local/bin/wabt/bin
+sudo mkdir /usr/local/wabt
+sudo mv build/ /usr/local/wabt/bin
 
 cd ..
 rm -rf wabt/

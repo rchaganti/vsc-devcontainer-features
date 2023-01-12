@@ -1,9 +1,9 @@
 {          
     "id": "wabt",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "name": "The WebAssembly Binary Toolkit",
     "remoteEnv": {
-        "PATH": "${containerEnv:PATH}:/usr/local/bin/wabt/bin"        
+        "PATH": "/usr/local/wabt/bin:${PATH}"        
     },
     "options": {
         "version": {
