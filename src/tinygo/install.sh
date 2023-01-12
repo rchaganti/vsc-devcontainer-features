@@ -17,5 +17,3 @@ TINYURL="https://github.com/tinygo-org/tinygo/releases/download/v${VERSION}/tiny
 sudo curl -Lo ${LOCALFILE} ${TINYURL}
 sudo dpkg -i  ${LOCALFILE}
 sudo rm  ${LOCALFILE}
-
-export PATH=$PATH:/usr/local/bin
