@@ -1,0 +1,22 @@
+{          
+    "id": "tinygo",
+    "version": "1.0.0",
+    "name": "Tiny Go",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Specify a version of Tiny Go"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "tinygo.vscode-tinygo"
+            ],
+            "features": {
+                "ghcr.io/owner/repo/go": "1.18"
+            }
+        }
+    }
+}
