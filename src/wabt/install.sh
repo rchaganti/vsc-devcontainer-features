@@ -26,7 +26,7 @@ cmake --build .
 cd ..
 sudo mkdir /usr/local/bin/wabt
 sudo mv build/ /usr/local/bin/wabt/bin
-export PATH="${PATH}:/usr/local/bin/wabt/bin"
+export PATH=$PATH:/usr/local/bin/wabt/bin
 
 cd ..
 rm -rf wabt/
