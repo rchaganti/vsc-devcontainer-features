@@ -1,0 +1,18 @@
+{          
+    "id": "wabt",
+    "version": "1.0.0",
+    "name": "The WebAssembly Binary Toolkit",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Specify a version of The WebAssembly Binary Toolkit"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "features": {}
+        }
+    }
+}
