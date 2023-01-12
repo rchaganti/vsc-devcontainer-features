@@ -1,6 +1,6 @@
 {          
     "id": "tinygo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "name": "Tiny Go",
     "options": {
         "version": {
@@ -12,7 +12,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "tinygo.vscode-tinygo"
+                "tinygo.vscode-tinygo",
+                "golang.go"
             ],
             "features": {
                 "ghcr.io/owner/repo/go": "1.18"
